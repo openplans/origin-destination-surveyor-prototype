@@ -106,12 +106,20 @@ img {
   background-color: #206080;
   color: #ddd;
 }
-.btn-btn-cancel,
+.btn-cancel,
 .btn-cancel:visited,
 .btn-cancel:link {
   background-color: #222;
   color: #ff8080;
   box-shadow: none;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+.btn-disabled,
+.btn-disabled:visited,
+.btn-disabled:link {
+  background-color: #777;
+  color: #fff;
   font-size: 0.75em;
   text-transform: uppercase;
 }
@@ -278,6 +286,14 @@ ul.session-list li {
   margin: 0 0 0 0.75em;
 }
 
+.location-btn-wrapper {
+}
+.checkmark {
+  color: LightGreen;
+  font-size: 1.75em;
+  line-height: 1;
+}
+
 .map {
   position: absolute;
   top: 0;
@@ -302,6 +318,26 @@ ul.session-list li {
   left: 1em;
   width: auto !important;
   z-index: 3;
+}
+.zoom {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+  color: #000;
+  
+}
+.zoom-btn {
+  display: block;
+  height: 1em;
+  width: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1em;
+  background: rgba(255,255,255,0.8);
+  margin-bottom: 0.25em;
+  padding: 0 0.125em 0.25em;
 }
 .map-cancel-btn {
   position: absolute;
