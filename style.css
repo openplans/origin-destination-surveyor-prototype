@@ -161,6 +161,9 @@ textarea {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
   width: 100%;
+  height: 2em;
+  font-size: 1em;
+  -webkit-appearance: menulist-button;
 }
 .input-block:focus,
 textarea:focus {
