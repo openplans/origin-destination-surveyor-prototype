@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <title>Origin/Destination Surveyor</title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Origin/Destination Surveyor">
+  <meta name="author" content="Origin/Destination Surveyor">
+
+  <!--  Mobile Viewport Fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon & Progressively-Enhanced Touch Icons: http://mathiasbynens.be/notes/touch-icons#sizes -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+
+  <link rel="stylesheet" href="normalize.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+<body>
+
+  <div class="container clearfix">
+
+    <div class="column-left-60">
+      <h2>New Session</h2>
+    </div>
+    <div class="column-right-35">
+      <a href="index.html" class="btn btn-block btn-cancel">Cancel</a>
+    </div>
+
+  </div><!-- / .container -->
+  <div class="container clearfix">
+
+    <form>
+      <fieldset>
+        <p><select class="select-block">
+          <option value="">Origin</option>
+          <option value="">Home</option>
+          <option value="">Work/Business</option>
+          <option value="">Shopping</option>
+          <option value="">Education</option>
+          <option value="">Social</option>
+          <option value="">Health</option>
+          <option value="">Other</option>
+        </select></p>
+        <p><a href="map.html"><input type="text" class="input-block" placeholder="" value="40.79283756,-73.96213948"></a></p>
+        <p><select class="select-block">
+          <option value="">Destination</option>
+          <option value="">Home</option>
+          <option value="">Work/Business</option>
+          <option value="">Shopping</option>
+          <option value="">Education</option>
+          <option value="">Social</option>
+          <option value="">Health</option>
+          <option value="">Other</option>
+        </select></p>
+        <p><a href="map.html"><input type="text" class="input-block" placeholder="" value="40.37567928,-73.39489621"></a></p>
+        <p><input type="text" class="input-block" placeholder="Legs..."></p>
+        <p><select class="select-block">
+          <option value="">Journey Frequency</option>
+          <option value="">7 days per week</option>
+          <option value="">5-6 days per week</option>
+          <option value="">2-4 days per week</option>
+          <option value="">1 day per week</option>
+          <option value="">Once every 2 weeks</option>
+          <option value="">Every 3 weeks or less</option>
+        </select></p>
+      </fieldset>
+      <!-- <input type="submit" value="Start Session" class="btn btn-block"> -->
+      <a href="index.html" class="btn btn-block btn-large btn-primary">End Survey</a>
+    </form>
+
+  </div><!-- / .container -->
+
+</body>
+</html>
