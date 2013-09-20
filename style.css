@@ -58,6 +58,7 @@ hr {
   border-left: 0;
 }
 .capitalize { text-transform: capitalize; }
+.light { font-weight: 100; }
 
 /* Images */
 img {
@@ -128,9 +129,8 @@ img {
 .btn-block:link {
   clear: both;
   display: block;
-  margin: 0 0 0.75em;
-  padding-top: 0.75em;
-  padding-bottom: 0.5em;
+  margin: .25em 0 0.75em;
+  padding-bottom: 0.75em;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -154,6 +154,9 @@ fieldset {
   border: 0;
   border-top: 1px solid rgba(255,255,255,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+fieldset + fieldset {
+  margin-top: -1em;
 }
 .input-block,
 textarea {
@@ -182,6 +185,10 @@ textarea {
   height: 6.5em;
   resize: none;
 }
+.checkbox-label {
+  float: left;  
+  margin: 0 0.5em 0.5em 0;
+}
 
 
 /* =Nonsemantic Base Styles
@@ -204,28 +211,6 @@ textarea {
 .is-invisible { visibility: hidden; }
 
 .nobreak { white-space: nowrap; }
-
-
-/* =Header
--------------------------------------------------------------- */
-
-.site-header {
-  background: #607580;
-  box-shadow: 0 1em 0 rgba(0,0,0,0.25);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  left: 0;
-  padding: 0.5em 0.5em 0.25em;
-  text-align: center;
-}
-.site-title {
-  font-size: 1em;
-  font-weight: bold;
-  color: #303a40;
-  text-shadow: 0 1px rgba(255,255,255,0.25);
-}
 
 
 /* =Content
@@ -265,16 +250,28 @@ ul.session-list li {
   font-size: 0.85em;
   font-weight: 300;
 }
-.surveyor-name {
+h2 + .session-meta {
+  margin-top: -0.75em;
+}
+
+.surveyor-name {}
+.route-name {
   font-weight: 400;
   color: #fff;
   font-size: 1.325em;
 }
-.route-name {}
 .vehicle-type {}
 
+.timestamp {
+  display: block;
+  font-size: 0.625em;
+  text-transform: uppercase;
+}
+.timestamp strong {
+  color: #ddd;
+}
 .session-edit-link {
-  font-size: 0.75em;
+  font-size: 0.85em;
 }
 
 .survey-count {
@@ -292,6 +289,12 @@ ul.session-list li {
   color: LightGreen;
   font-size: 1.75em;
   line-height: 1;
+  float: right;
+  margin: 0.25em -0.25em 0 0.25em;
+}
+.prompt {
+  display: block;
+  margin-top: 0.5em;
 }
 
 .map {
@@ -366,6 +369,7 @@ ul.session-list li {
 }
 
 .ajax-loader {
+  margin-top: .25em;
   padding: 0.75em 0 0.5em;
   text-align: center;
 }

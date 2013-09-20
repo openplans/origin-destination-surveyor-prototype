@@ -27,10 +27,14 @@
   <div class="container clearfix">
 
     <div class="column-left-60">
-      <h2>Survey</h2>
+      <h2>Route Name</h2>
+      <div class="session-meta">
+        <span class="surveyor-name">Name of Surveyor</span>,
+        <span class="vehicle-type">Type of Vehicle</span>
+      </div>
     </div>
     <div class="column-right-35">
-      <a href="index.html" class="btn btn-block btn-cancel">Cancel</a>
+      <a href="index.html" class="btn btn-block btn-cancel">Cancel Response</a>
     </div>
 
   </div><!-- / .container -->
@@ -38,62 +42,106 @@
 
     <form>
       <fieldset>
-        <p><select class="select-block">
-          <option value="">Origin Purpose</option>
-          <option value="">Home</option>
-          <option value="">Work/Business</option>
-          <option value="">Shopping</option>
-          <option value="">Education</option>
-          <option value="">Social</option>
-          <option value="">Health</option>
-          <option value="">Other</option>
-        </select></p>
+
         <p class="clearfix">
           <span class="column-left-60">
-            <a href="map.html" class="btn btn-block btn-small btn-disabled">Set Origin</a>
-          </span>
-          <span class="column-right-35">
             <span class="checkmark">&#x2713;</span>
-          </span>
-        </p>
-        <p><select class="select-block">
-          <option value="">Destination Purpose</option>
-          <option value="">Home</option>
-          <option value="">Work/Business</option>
-          <option value="">Shopping</option>
-          <option value="">Education</option>
-          <option value="">Social</option>
-          <option value="">Health</option>
-          <option value="">Other</option>
-        </select></p>
-        <p class="clearfix">
-          <span class="column-left-60">
-            <a href="map.html" class="btn btn-block btn-small">Set Destination</a>
+            <span class="prompt">Where did you start your journey?</span>
           </span>
           <span class="column-right-35">
+            <a href="map.html" class="btn btn-block btn-small btn-disabled">Select Location</a>
           </span>
         </p>
-        <p><select class="select-block">
-          <option value="">Number of Legs</option>
-          <option value="">1 Leg</option>
-          <option value="">2 Legs</option>
-          <option value="">3 Legs</option>
-          <option value="">4 Legs</option>
-          <option value="">5 Legs</option>
-          <option value="">6 Legs</option>
-        </select></p>
-        <p><select class="select-block">
-          <option value="">Journey Frequency</option>
-          <option value="">7 days per week</option>
-          <option value="">5-6 days per week</option>
-          <option value="">2-4 days per week</option>
-          <option value="">1 day per week</option>
-          <option value="">Once every 2 weeks</option>
-          <option value="">Every 3 weeks or less</option>
-        </select></p>
+        <p>
+          <select class="select-block">
+            <option value="">What was your reason for being there?</option>
+            <option value="">Home</option>
+            <option value="">Work/Business</option>
+            <option value="">Shopping</option>
+            <option value="">Education</option>
+            <option value="">Social</option>
+            <option value="">Health</option>
+            <option value="">Other</option>
+          </select>
+        </p>
+
       </fieldset>
+      <fieldset>
+
+        <p class="clearfix">
+          <span class="column-left-60">
+            <span class="prompt">Where is your final destination?</span>
+          </span>
+          <span class="column-right-35">
+            <a href="map.html" class="btn btn-block btn-small">Select Location</a>
+          </span>
+        </p>
+        <p>
+          <select class="select-block">
+            <option value="">What is your reason for going there?</option>
+            <option value="">Home</option>
+            <option value="">Work/Business</option>
+            <option value="">Shopping</option>
+            <option value="">Education</option>
+            <option value="">Social</option>
+            <option value="">Health</option>
+            <option value="">Other</option>
+          </select>
+        </p>
+
+      </fieldset>
+      <fieldset>
+
+        <p>How many different vehicles will you use to complete this journey?</p>
+        <p><select class="select-block">
+          <option value="">1 Vehicle</option>
+          <option value="">2 Vehicles</option>
+          <option value="">3 Vehicles</option>
+          <option value="">4 Vehicles</option>
+          <option value="">5 Vehicles</option>
+          <option value="">6 Vehicles</option>
+        </select></p>
+
+      </fieldset>
+      <fieldset>
+
+        <p>Which types of vehicle will you have used when you complete this journey?</p>
+        <label class="checkbox-label btn btn-small"><input type="checkbox" checked="checked"> Jeepney</label>
+        <label class="checkbox-label btn btn-small"><input type="checkbox" checked="checked"> Non-Aircon Bus</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> Air-con Bus</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> AUV</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> Tricycle</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> MRT</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> LRT</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> Taxi</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> Car</label>
+        <label class="checkbox-label btn btn-small btn-secondary"><input type="checkbox"> Other</label>
+
+      </fieldset>
+      <fieldset>
+
+        <p>How many Pesos will this journey have cost you?</p>
+        <p><input type="number" min="0" class="input-block" placeholder="Cost of journey..."></p>
+
+      </fieldset>
+      <fieldset>
+
+        <p>How often do you make this journey?</p>
+        <p>
+          <select class="select-block">
+            <option value="">7 days per week</option>
+            <option value="">5-6 days per week</option>
+            <option value="">2-4 days per week</option>
+            <option value="">1 day per week</option>
+            <option value="">Once every 2 weeks</option>
+            <option value="">Every 3 weeks or less</option>
+          </select>
+        </p>
+
+      </fieldset>
+
       <!-- <input type="submit" value="Start Session" class="btn btn-block"> -->
-      <a href="index.html" class="btn btn-block btn-large btn-primary">End Survey</a>
+      <a href="index.html" class="btn btn-block btn-primary">Submit Response</a>
     </form>
 
   </div><!-- / .container -->
