@@ -369,8 +369,8 @@ h2 + .session-meta {
 }
 
 .ajax-loader {
-  margin-top: .25em;
-  padding: 0.75em 0 0.5em;
+  margin-top: .5em;
+  padding: 1em 0 0.5em;
   text-align: center;
 }
 
